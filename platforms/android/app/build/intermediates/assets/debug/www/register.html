@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>S. K. Somaiya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+</head>
+
+<body>
+        <div class="preloader-background" style="display:none">
+                <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-red-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="container">
+        <h2 class="center">Register</h2>
+        <div class="row">
+            <div class="col m3"></div>
+            <form class="col m6" onsubmit="event.preventDefault(); register();">
+                <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">assignment_ind</i>
+                            <input id="collegeId" type="number" class="validate">
+                            <label for="collegeId">ID No.</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="text" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phoneNo" type="number" class="validate">
+                            <label for="phoneNo">Phone No.</label>
+                        </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="confirmpassword" type="password" class="validate">
+                        <label for="confirmpassword">Confirm Password</label>
+                    </div>
+                    <div class="center-align col s12">
+                        <button class="btn red darken-4" id="reg" type="submit">Sign Up</button>
+                    </div>
+                    <div class="row"></div>
+                    <div class="center-align col s12">
+                        <a href="index.html">Already Have An Account? Log In</a>
+                    </div>
+                </div>
+            </form>
+            <div class="col m3"></div>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-storage.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

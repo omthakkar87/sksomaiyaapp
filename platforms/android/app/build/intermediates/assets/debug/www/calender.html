@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <script src="assets/js/jquery-3.3.1.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                $("#slide-out").load("sidebar.html");
+            });
+        </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>S. K. Somaiya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper red darken-4">
+            <a href="#" class="brand-logo center">Calender</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+    <ul id="slide-out" class="sidenav"></ul>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                    <table id="cal">
+                        </table>
+            </div>
+        </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-storage.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
